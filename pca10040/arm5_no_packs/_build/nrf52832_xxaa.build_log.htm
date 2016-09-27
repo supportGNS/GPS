@@ -1,0 +1,100 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.18a
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Michael Elias, MacGlobalTalk, LIC=QGX04-ZWL7B-YIUEW-8FIYI-NJ0C2-Q26LJ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard Cortex-M only  Version: 5.18a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         
+Dialog DLL:      
+Target DLL:      Segger\JL2CM3.dll V2.99.19.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+C:\Users\Anthony Fanous\Desktop\Tracking_Project\Demo_Saudia\GPS_LORA_Trial\pca10040\arm5_no_packs\twi_sensor_pca10040.uvprojx
+Project File Date:  07/02/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'nrf52832_xxaa'
+compiling retarget.c...
+..\..\..\components\libraries\uart\app_uart.h(281): warning:  #1295-D: Deprecated declaration app_uart_close - give arg types
+  uint32_t app_uart_close();
+..\..\..\components\libraries\uart\retarget.c: 1 warning, 0 errors
+compiling app_uart_fifo.c...
+..\..\..\components\libraries\uart\app_uart.h(281): warning:  #1295-D: Deprecated declaration app_uart_close - give arg types
+  uint32_t app_uart_close();
+..\..\..\components\libraries\uart\app_uart_fifo.c: 1 warning, 0 errors
+compiling main.cpp...
+..\..\Timers\Timers.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\UART\UART.h(30): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\GPIO\GPIO.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\main.cpp(29): warning:  #177-D: variable "devEUI" was declared but never referenced
+  const uint8_t devEUI[8] = {0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88};
+..\..\main.cpp(31): warning:  #177-D: variable "appEUI" was declared but never referenced
+  const uint8_t appEUI[8] = {0xD4, 0x3C, 0x90, 0xA2, 0x5E, 0xB6, 0xC3, 0x5D};
+..\..\main.cpp(34): warning:  #177-D: variable "appKey" was declared but never referenced
+  const uint8_t appKey[16] ={0x7F, 0xE4, 0x43, 0x9C,	0x83, 0x3E, 0x77, 0xB8,	0x5C, 0x62, 0x9F, 0x9E,	0x06, 0x24, 0x8E, 0x07};
+..\..\main.cpp(37): warning:  #177-D: variable "nwkSKey" was declared but never referenced
+  const uint8_t nwkSKey[16] ={0x0D, 0x0E, 0x0A, 0x0D,	0x0B, 0x0E, 0x0E, 0x0F,	0x0C, 0x0A, 0x0F, 0x0E,	0x0B, 0x0A, 0x0B, 0x0E};
+..\..\main.cpp: 8 warnings, 0 errors
+compiling GPIO.cpp...
+..\..\GPIO\GPIO.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\GPIO\GPIO.cpp(20): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\GPIO\GPIO.cpp: 2 warnings, 0 errors
+compiling UART.cpp...
+..\..\UART\UART.h(30): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\UART\UART.cpp: 1 warning, 0 errors
+linking...
+Program Size: Code=5924 RO-data=1184 RW-data=20 ZI-data=8812  
+FromELF: creating hex file...
+".\_build\nrf52832_xxaa.axf" - 0 Error(s), 12 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.5.0.pack
+                NordicSemiconductor::Device:Startup:8.5.0
+                Nordic Semiconductor nRF ARM devices Device Family Pack.
+   * Component: Startup Version: 8.5.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Anthony Fanous\Desktop\Tracking_Project\Demo_Saudia\GPS_LORA_Trial\pca10040\arm5_no_packs\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.5.0\Device\Include
+  C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.6.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.5.0
+      Source file:   Device\Source\arm\arm_startup_nrf52.s
+      Include file:  Device\Include\system_nrf52.h
+      Source file:   Device\Source\system_nrf52.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

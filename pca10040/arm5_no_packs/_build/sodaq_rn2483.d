@@ -1,0 +1,9 @@
+.\_build\sodaq_rn2483.o: ..\..\LORA_lib\Sodaq_RN2483.cpp
+.\_build\sodaq_rn2483.o: ..\..\LORA_lib\Sodaq_RN2483.h
+.\_build\sodaq_rn2483.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\_build\sodaq_rn2483.o: ..\..\LORA_lib\Stream.h
+.\_build\sodaq_rn2483.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\_build\sodaq_rn2483.o: ..\..\LORA_lib\Switchable_Device.h
+.\_build\sodaq_rn2483.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\String.h
+.\_build\sodaq_rn2483.o: ..\..\LORA_lib\StringLiterals.h
+.\_build\sodaq_rn2483.o: ..\..\LORA_lib\Utils.h
